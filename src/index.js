@@ -9,6 +9,7 @@ import sessions from 'express-session';
 import cookieParser from 'cookie-parser';
 import r6 from 'r6s-stats-api';
 import jsdom from 'jsdom';
+import fetch from 'node-fetch';
 import jQuery from 'jquery';
 const dom = new jsdom.JSDOM("");
 
