@@ -17,7 +17,8 @@ const conexion = mysql.createConnection({
     host :      process.env.DB_HOST     || 'localhost',
     database :  process.env.DB_NAME     || 'teamfight',
     user :      process.env.DB_USER     || 'root',
-    password :  process.env.DB_PASSWORD ||  ''
+    password :  process.env.DB_PASSWORD ||  '',
+    port : process.env.DB_PORT
 });
 
 const oneDay = 1000 * 60 * 60 *24;
