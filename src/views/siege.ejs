@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="/rainbow.css">
+</head>
+<body>
+<%- include('partials/navigationSiege') %>
+<div class="fondoR6 fondor6img"></div>
+<div class="cabeceraR6">
+    <h1 class="nombreUbisoft"></h1>
+    <p class="nivelUbisoft"></p>
+    <img class="imgRangoR6" src="">
+</div>
+<div id="allStats" class="d-inline-flex">
+    <div class="r6grid">
+        <div class="grid1"><%- include ('partials/statsR6')%></div>
+        <div class="grid2"><%- include ('partials/statsR6Ranked')%></div>
+        <div class="grid3"><%- include ('partials/statsR6Casual') %></div>
+    </div>
+</div>
+<img src="/static/cargando.gif" alt="" id="cargando" class="hidden">
+<%- include('partials/footer') %>
+</body>
+<script src="../apps/siege.js"></script>
+<%- include('partials/scripts') %>
+</html>

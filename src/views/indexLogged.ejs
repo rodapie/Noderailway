@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+</head>
+<body  id ="main"class="bg-secondary bg-opacity-25">
+
+<%- include('partials/navigationLogged') %>
+<div id="fondo"></div>
+<div class="search-block">
+    <div class="row justify-content-center">
+        <div class="col-md-9">
+            <div class="card text-center justify-content-center shadow-lg card-1 border-0 bg-dark px-sm-5 px-0">
+                <div class="card-body show  ">
+                    <div class="row">
+                        <div class="col">
+                            <h5><b>Selecciona el juego</b></h5>
+                        </div>
+                    </div>
+                    <div class="radio-group row justify-content-center px-2 text-center a">
+                        <div id="radiolol" class="col-auto ml-sm-2 mx-1 card-block  py-0 text-center radio radiolol selected ">
+                            <div class="flex-row">
+                                <div id="lolradio" class="col">
+                                    <div class="pic"> <img class="irc_mut img-fluid" src="../../static/fondoLogged.jpg"  width="100" height="100"> </div>
+                                    <p>League of legends</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="radiosiege"class="col-auto ml-sm-2 mx-1 card-block  py-0 text-center radio  radiosiege">
+                            <div class="flex-row">
+                                <div class="col">
+                                    <div class="pic"> <img class="irc_mut img-fluid" src="../../static/fondoR6.jpg"  width="100" height="100"> </div>
+                                    <p>Siege</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenido" class="container d-flex justify-content-center align-items-center vh-50">
+                    <div id="formulario" class="">
+                        <div class="row gx-0 ">
+                            <div  id="buscartext" class="col-md-7">
+                                <input id ="buscarInput" type="text" class="form-control form-control-lg" placeholder="Buscar...">
+                            </div>
+                            <div id ="lol" class="col-md-3">
+                                <select id ="region" class="form-select form-select-lg" aria-label="Filtro de búsqueda">
+                                    <option selected value="euw">EUW</option>
+                                    <option value="na">NA</option>
+                                    <option value="kr">KR</option>
+                                    <option value="lan">LAN</option>
+                                    <option value="las">LAS</option>
+                                    <option value="ch">CH</option>
+                                </select>
+                            </div>
+                            <div id="siege" class="col-md-3 hidden">
+                                <select id ="plataforma" class="form-select form-select-lg " aria-label="Filtro de búsqueda">
+                                    <option selected value="pc">PC</option>
+                                    <option value="psn">PSN</option>
+                                    <option value="xbox">XBOX</option>
+
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" id="buscarMain" class="btn btn-primary btn-lg" onclick="buscarMain()">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <ul id="listaTags"></ul>
+</div>
+
+<%- include('partials/modalLogin.ejs') %>
+<%- include('partials/modalRegistro') %>
+<script src="../apps/jquery-3.6.4.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="../apps/mainLogged.js"></script>
+<%- include('partials/scripts')%>
+
+
+</body>
+
+</html>

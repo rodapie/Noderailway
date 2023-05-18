@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark" xmlns="http://www.w3.org/1999/html" id="navFixed">
+    <div class="container-fluid">
+        <div class = "navbar-brand d-flex flex-row">
+            <a class = "navbar-brand" href="#" onclick="inicios()"><img id="logo" src="/static/logo2.jpg" alt="Icono de la pagina redirige a index"></a>
+
+        </div>
+        <div class="container justify-content-md-center" id="containerBuscadorLol">
+            <div class="row input-group justify-content-md-center" id="buscador">
+
+                <select id ="region" class="col-2" aria-label="Filtro de búsqueda">
+                    <option selected value="euw">EUW</option>
+                    <option value="na">NA</option>
+                    <option value="kr">KR</option>
+                    <option value="lan">LAN</option>
+                    <option value="las">LAS</option>
+                    <option value="ch">CH</option>
+                </select>
+
+                <input onsubmit="buscar()" class="inputLeague" id="caja-buscar" name="nombreInvocador" type="search" placeholder="Buscar invocador" >
+
+                <input  id="buscar" class="btn btn-outline-success col-4" type="submit">
+            </div>
+        </div>
+        <div class="ml-auto navbar-nav">
+            <div class="nav-item dropdown">
+                <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://www.tutorialrepublic.com/examples/images/avatar/3.jpg" class="avatar" alt="Avatar"><span id="user"></span><b class="caret"></b></a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Mi cuenta</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a href="#" class="dropdown-item" onclick="logout()"><i class="material-icons">&#xE8AC;</i> Logout</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+

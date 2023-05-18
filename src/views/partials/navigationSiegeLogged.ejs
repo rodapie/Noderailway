@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <a href="#" class="navbar-brand" onclick="inicios()"><img width="100" height="auto" src="/static/placeholder.jpg"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+
+        <div class="navbar-nav mr-auto">
+            <a href="#" onclick="leagues()" class="nav-item nav-link"><span>League of Legends</span></a>
+            <a href="#" onclick="sieges()" class="nav-item nav-link active"><span>Siege</span></a>
+        </div>
+        <div class="ml-auto navbar-nav">
+            <div class="nav-item dropdown">
+                <div id="busqueda">
+                    <input class="form-control me-2" id="nombre" type="search" placeholder="Ubisoft name account" aria-label="Search">
+                    <label style="color:white;" for="plataforma">Plataforma</label>
+                    <select id ="plataforma" name="plataforma">
+                        <option selected value="pc" >PC</option>
+                        <option value="psn">PSN</option>
+                        <option value="xbox">XBOX</option>
+                    </select>
+                    <input type="submit" id="buscar" class="btn btn-outline-success">
+                </div>
+                <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="https://www.tutorialrepublic.com/examples/images/avatar/3.jpg" class="avatar" alt="Avatar"><span id="user"></span><b class="caret"></b></a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Mi cuenta</a>
+                    <div class="divider dropdown-divider"></div>
+                    <a href="#" class="dropdown-item" onclick="logout()"><i class="material-icons">&#xE8AC;</i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

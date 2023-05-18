@@ -1,0 +1,89 @@
+<div class="modal " id="modalRegistro" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable vw-50 ">
+        <div class="modal-content bg-dark text-white">
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title">Registro</h5>-->
+<!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--            </div>-->
+
+                <div class="modal-body vh-80">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 ">
+
+                            <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registro</p>
+
+                            <form class="mx-1 mx-md-10">
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                        <input type="text" id="form3Example1u" name ="usuario" class="form-control" />
+                                        <label class="form-label" for="form3Example1u">Nombre Usuario</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                        <input type="text" id="form3Example1l" name ="lol" class="form-control" />
+                                        <label class="form-label" for="form3Example1l">Nombre Invocador</label>
+                                        <select  id="form3Example1lr" name="region">
+                                            <option selected value="euw">EUW</option>
+                                            <option value="na">NA</option>
+                                            <option value="kr">KR</option>
+                                            <option value="lan">LAN</option>
+                                            <option value="las">LAS</option>
+                                            <option value="ch">CH</option>
+                                        </select>
+                                        <label class="form-label" for="form3Example1lr">Region</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                        <input type="text" id="form3Example1s" name="siege" class="form-control" />
+                                        <label class="form-label" for="form3Example1s">Nombre Ubisoft</label>
+                                        <select  id="form3Example1sp" name="plataforma">
+                                            <option selected value="pc">PC</option>
+                                            <option value="psn">PSN</option>
+                                            <option value="xbox">XBOX</option>
+
+                                        </select>
+                                        <label class="form-label" for="form3Example1sp">Plataforma</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                        <input type="email" id="form3Example3c" name="email" class="form-control" required/>
+                                        <label class="form-label" for="form3Example3c">Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                        <input type="password" id="form3Example4c" name="pass" class="form-control" required minlength="8" maxlength="16"/>
+                                        <label class="form-label" for="form3Example4c">Contraseña</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-row align-items-center mb-4">
+                                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                    <div class="form-outline flex-fill mb-0">
+                                        <input type="password" id="form3Example4cd" name="pass2" class="form-control" required minlength="8" maxlength="16"/>
+                                        <label class="form-label" for="form3Example4cd">Repite tu contraseña</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                    <button type="button" class="btn btn-success btn-lg" onclick="registrar()">Registrar</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
