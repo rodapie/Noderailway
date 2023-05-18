@@ -659,6 +659,6 @@ app.post('/datosPartida',async (req, res) => {
     res.send(data);
     // console.log(data);
 })
-
-app.listen(3000)
+const port = process.env.PORT || 3000;
+app.listen(port,"0.0.0.0")
 console.log('Escuchando en el puerto 3000');

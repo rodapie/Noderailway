@@ -4,6 +4,9 @@ console.log(queryString);
 const params = new URLSearchParams(queryString);
 console.log(params)// Obtener el valor del parámetro 'nombreInvocador'
 const user = params.get('user');
+const nombre = params.get('nombreInvocador');
+const serv = params.get('region');
+const amigo = params.get('amigo');
 console.log(user);
 
 
@@ -467,7 +470,7 @@ async function buscar() {
             body: JSON.stringify({ nombreInvocador,region })
 
         });
-        limpiarfavoritos();
+        // limpiarfavoritos();
         cargarFavoritos(cookieObject.name,nombreInvocador);
         var campeon1WinRate = 0;
         var campeon2WinRate = 0;
@@ -642,12 +645,17 @@ async function buscarInicial() {
     document.getElementsByClassName("fondoLolLogueado")[0].style.backgroundImage = "url('../../static/fondoLogged.jpg')";
     document.getElementById("cargando").classList.remove('hidden');
     // const nombreInvocador = document.getElementById('caja-buscar').value;
-    const nombreInvocador = cookieObject.lol;
-    const region = cookieObject.servidor;
-    let url = `http://localhost:3000/leagueLogged?user=${cookieObject.name}&nombreInvocador=` + encodeURIComponent(nombreInvocador) +"&region=" +region;
-    if ( window.location.href !==  url){
-        window.location.href = `http://localhost:3000/leagueLogged?user=${cookieObject.name}&nombreInvocador=` + encodeURIComponent(nombreInvocador) +"&region=" +region;
+    let nombreInvocador;
+    let region;
+    if(amigo === null){
+        nombreInvocador = cookieObject.lol;
+        region = cookieObject.servidor;
+    }else{
+        nombreInvocador = nombre;
+        region = serv;
     }
+
+
 
     borrar();
     try {
@@ -659,7 +667,7 @@ async function buscarInicial() {
             body: JSON.stringify({ nombreInvocador,region })
 
         });
-        limpiarfavoritos();
+        // limpiarfavoritos();
         cargarFavoritos(cookieObject.name,nombreInvocador);
         var campeon1WinRate = 0;
         var campeon2WinRate = 0;
@@ -860,6 +868,7 @@ async function añadirFavorito(nombre,amigo,tag,juego,server){
             timer: 1500
         })
         cargarFavoritos(nombre,amigo);
+        location.reload();
         buscar();
 
     }else{
@@ -910,11 +919,16 @@ async function cargarFavoritos(nombre,amigo){
 
     const data = await response.json();
     let selector =document.getElementById("tag-list");
+    let añadidos = [];
     console.log("LONGITUD DATA = " + data.tags.length);
     for(let i = 0; i < data.tags.length;i++){
-        let newtag = document.createElement("option");
-        newtag.innerText = `${data.tags[i].tag}`;
-        selector.appendChild(newtag);
+        console.log("contiene= "+añadidos.includes(data.tags[i].tag));
+        if(añadidos.includes(data.tags[i].tag) === false){
+            let newtag = document.createElement("option");
+            newtag.innerText = `${data.tags[i].tag}`;
+            selector.appendChild(newtag);
+            añadidos.push(data.tags[i].tag);
+        }
     }
 
 

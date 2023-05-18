@@ -157,11 +157,11 @@ function buscarAmigo(){
     let id = $(this).attr("id");
     let nombre=$(`#amigo${id}`).text();
     let server=$(`#server${id}`).text();
-    if(server !== "pc" || server !== "psx" || server !== "xbox"){
-        window.location.href = `/leagueLogged?user=${cookieObject.name}&nombreInvocador=` + encodeURIComponent(nombre) + "&region=" + encodeURIComponent(server);
-    }
-    if(server === "pc" || server === "psn" || server === "xbox"){
-        window.location.href = `/siegeLogged?user=${cookieObject.name}&nombre=` + encodeURIComponent(nombre) + "&plataforma=" + encodeURIComponent(server)+"&amigo=ok";
-    }
+     if(server !== "pc" || server !== "psx" || server !== "xbox"){
+         window.location.href = `/leagueLogged?user=${cookieObject.name}&nombreInvocador=` + encodeURIComponent(nombre) + "&region=" + encodeURIComponent(server)+"&amigo="+id;
+     }
+     if(server === "pc" || server === "psn" || server === "xbox"){
+         window.location.href = `/siegeLogged?user=${cookieObject.name}&nombre=` + encodeURIComponent(nombre) + "&plataforma=" + encodeURIComponent(server)+"&amigo=ok";
+     }
     console.log(nombre,server);
 }
