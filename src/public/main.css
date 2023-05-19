@@ -562,13 +562,13 @@ ul, li p {
   .fondos::before {
     left: 0;
     
-    background-image: url('../../static/r6fondo3.jpg');
+    background-image: url('/img/r6fondo3.jpg');
     transition: opacity 0.5s;
   }
   
   .fondos::after {
     right: 0;
-    background-image: url('../../static/fondogrieta.png');
+    background-image: url('img/fondogrieta.png');
     z-index: -1;
     transition: opacity 0.5s;
   }
@@ -596,7 +596,7 @@ ul, li p {
     z-index: -1;
 
     background-attachment: fixed;
-    background-image: url('../../static/fondoLogged.jpg');
+    background-image: url('../../img /fondoLogged.jpg');
     transition:.5s !Important;
 }
 
