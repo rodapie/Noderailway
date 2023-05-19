@@ -1,7 +1,7 @@
 import {Router} from 'express'
 
 const router = Router()
-
+let BASE_URL = "https://noderailway-production-14d7.up.railway.app/" || "localhost";
 router.get(`${BASE_URL}/`,(req,res) =>res.render('index', {title : 'Team Fight'}))
 router.get(`${BASE_URL}/league`,(req,res) =>res.render('league', {title : 'League'}))
 router.get(`${BASE_URL}/login`,(req,res) =>res.render('login', {title : 'Login'}))
