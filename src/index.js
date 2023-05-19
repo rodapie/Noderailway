@@ -60,7 +60,7 @@ app.use(sessions({
 app.use(cookieParser());
 
 var session;
-app.get(`${BASE_URL}/apps/league.js`, function(req, res) {
+app.get(`${BASE_URL}/src/apps/league.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/league.js');
 });
