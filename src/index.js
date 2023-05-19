@@ -14,6 +14,8 @@ import fetch from 'node-fetch';
 import jQuery from 'jquery';
 const dom = new jsdom.JSDOM("");
 
+let BASE_URL = "https://noderailway-production-14d7.up.railway.app/" || "localhost";
+
 
 const conexion = mysql.createConnection({
     host :      process.env.DB_HOST     || 'localhost',
@@ -100,14 +102,14 @@ app.get('/apps/micuenta.js', function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/micuenta.js');
 });
-app.post('/buscar-invocador',function(req,res){
+app.post(`${BASE_URL}/buscar-invocador`,function(req,res){
     console.log("ha llegado");
     const nombre = req.body.nombreInvocador;
     //recibo el valor del input, ahora hay que mandarlo por la api para recibir el json de vuelta
     res.send(`hola ${nombre}`);
 });
 
-app.post('/guardar', (req, res) => {
+app.post(`${BASE_URL}/guardar`, (req, res) => {
     // Obtener la contraseña sin encriptar desde el formulario
     // Conectar con la base de datos y guardar el hash de la contraseña
     const connection = mysql.createConnection({
@@ -139,7 +141,7 @@ app.post('/guardar', (req, res) => {
     });
 });
 
-app.post('/registro', (req, res) => {
+app.post(`${BASE_URL}/registro`, (req, res) => {
     // Obtener la contraseña sin encriptar desde el formulario
     let password = req.body.password;
     const hashedPassword = crypto.createHash('sha256').update(password).digest('hex');
@@ -193,7 +195,7 @@ app.post('/registro', (req, res) => {
     });
 });
 
-app.post("/anadirFavorito",(req,res) => {
+app.post(`${BASE_URL}/anadirFavorito`,(req,res) => {
     console.log(req.body);
 
     const connection = mysql.createConnection({
@@ -226,7 +228,7 @@ app.post("/anadirFavorito",(req,res) => {
     });//Fin Connect
 });//Fin añadirFavoritos
 
-app.post("/cargarFavoritos",(req,res) =>{
+app.post(`${BASE_URL}/cargarFavoritos`,(req,res) =>{
     const connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
@@ -253,7 +255,7 @@ app.post("/cargarFavoritos",(req,res) =>{
     })
 });
 
-app.post("/cargarFavoritosMain",(req,res) =>{
+app.post(`${BASE_URL}/cargarFavoritosMain`,(req,res) =>{
     const connection = mysql.createConnection({
         host: 'localhost',
         user: 'root',
@@ -280,7 +282,7 @@ app.post("/cargarFavoritosMain",(req,res) =>{
     })
 });
 
-app.post("/recuperar",(req,res) =>{
+app.post(`${BASE_URL}/recuperar`,(req,res) =>{
     let usuario = req.body.nombreUsuario;
     const connection = mysql.createConnection({
         host: 'localhost',
@@ -298,7 +300,7 @@ app.post("/recuperar",(req,res) =>{
         res.send(data);
     });
 });
-app.post("/login",(req,res) => {
+app.post(`${BASE_URL}/login`,(req,res) => {
     let password = req.body.password;
     console.log("LOGIN");
     const hashedPassword = crypto.createHash('sha256').update(password).digest('hex');
@@ -343,7 +345,7 @@ app.post("/login",(req,res) => {
 
 });
 
-app.post('/buscarData', (req,res)=>{
+app.post(`${BASE_URL}/buscarData`, (req,res)=>{
 
 
     async function getSummonerByName(summonerName,region) {
@@ -630,7 +632,7 @@ app.post('/buscarData', (req,res)=>{
 
 
 })
-app.post('/r6stats',(req,res) =>{
+app.post(`${BASE_URL}/r6stats`,(req,res) =>{
     // console.log("buscando stats de r6...");
     // console.log("Plataforma: " + req.body.platform);
     // console.log("Nombre: " + req.body.name);
@@ -648,7 +650,7 @@ app.post('/r6stats',(req,res) =>{
 
 })
 
-app.post('/datosPartida',async (req, res) => {
+app.post(`${BASE_URL}/datosPartida`,async (req, res) => {
     let id = req.body.gameId;
     // console.log(id);
     async function findMatch(matchId) {
