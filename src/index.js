@@ -41,7 +41,7 @@ app.set('view engine', 'ejs')
 
 app.use(indexRoutes)
 app.use(express.static(join(__dirname,'public')))
-app.use(`${BASE_URL}/img`,express.static('img'))
+app.use(`/img`,express.static('img'))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(sessions({
