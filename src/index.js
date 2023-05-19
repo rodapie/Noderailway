@@ -665,4 +665,4 @@ app.post(`${BASE_URL}/datosPartida`,async (req, res) => {
 })
 const port = process.env.PORT || 3000;
 app.listen(port,`0.0.0.0`);
-console.log('Escuchando en el puerto 3000');
+console.log(`Conectado a ${BASE_URL} y Escuchando en el puerto ${port}`);
