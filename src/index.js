@@ -41,16 +41,6 @@ app.set('view engine', 'ejs')
 app.use(indexRoutes)
 app.use(express.static(join(__dirname,'public')))
 app.use(`${BASE_URL}/static`,express.static('img'))
-app.use(`${BASE_URL}/img`, express.static('img'));
-app.use(`${BASE_URL}/apps`, express.static('src/apps', {
-    setHeaders: (res, path, stat) => {
-        if (path.endsWith('.js')) {
-            res.setHeader('Content-Type', 'text/javascript');
-        }
-    }
-}));
-app.use(`${BASE_URL}/static`, express.static('src/apps'));
-app.use(express.static('img'))
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(sessions({
@@ -62,53 +52,53 @@ app.use(sessions({
 app.use(cookieParser());
 
 var session;
-app.get(`${BASE_URL}/apps/league.js`, function(req, res) {
+app.get(`/apps/league.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/league.js');
 });
 
-app.get(`${BASE_URL}/apps/valorant.js`, function(req, res) {
+app.get(`/apps/valorant.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/valorant.js');
 });
 
-app.get(`${BASE_URL}/apps/jquery-3.6.4.js`, function(req, res) {
+app.get(`/apps/jquery-3.6.4.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/jquery-3.6.4.js');
 });
 
-app.get(`${BASE_URL}/apps/siege.js`, function(req, res) {
+app.get(`/apps/siege.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/siege.js');
 });
 
-app.get(`${BASE_URL}/apps/main.js`, function(req, res) {
+app.get(`/apps/main.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/main.js');
 });
 
-app.get(`${BASE_URL}/apps/mainLogged.js`, function(req, res) {
+app.get(`/apps/mainLogged.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/mainLogged.js');
 });
 
-app.get(`${BASE_URL}/apps/leagueLogged.js`, function(req, res) {
+app.get(`/apps/leagueLogged.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/leagueLogged.js');
 });
 
 
-app.get(`${BASE_URL}/apps/siegeLogged.js`, function(req, res) {
+app.get(`/apps/siegeLogged.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/siegeLogged.js');
 });
 
-app.get(`${BASE_URL}/apps/leagueGame.js`, function(req, res) {
+app.get(`/apps/leagueGame.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/leagueGame.js');
 });
 
-app.get(`${BASE_URL}/apps/micuenta.js`, function(req, res) {
+app.get(`/apps/micuenta.js`, function(req, res) {
     res.setHeader('Content-Type', 'text/javascript');
     res.sendFile(__dirname + '/apps/micuenta.js');
 });
