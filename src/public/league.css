@@ -97,7 +97,7 @@ input text:hover {
     z-index: -1;
 
     background-attachment: fixed;
-    background-image: url('../../static/fondoLogged.jpg');
+    background-image: url('img/fondoLogged.jpg');
 }
 .fondoLol::before {
     content: "";
@@ -126,7 +126,7 @@ input text:hover {
     z-index: -1;
 
     background-attachment: fixed;
-    background-image: url('../../static/fondoLogged.jpg');
+    background-image: url('img/fondoLogged.jpg');
 
 
 }
