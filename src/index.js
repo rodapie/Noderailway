@@ -31,7 +31,8 @@ const oneDay = 1000 * 60 * 60 *24;
 
 const app = express()
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
+const __dirname = dirname(fileURLToPath(import.meta.url) ||fileURLToPath("https://noderailway-production-14d7.up.railway.app/") );
+console.log("pathing =" + __dirname);
 const API_KEY =  'RGAPI-1c8bc602-0f27-4f4b-88c1-06728b168e62';
 
 console.log(join(__dirname,'/views'))
