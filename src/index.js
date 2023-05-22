@@ -148,10 +148,11 @@ app.post(`${BASE_URL}/registro`, (req, res) => {
     const hashedPassword = crypto.createHash('sha256').update(password).digest('hex');
     // Conectar con la base de datos y guardar el hash de la contraseña
     const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'teamfight'
+        host: process.env.DB_HOST || 'localhost',
+        user: process.env.DB_USER || 'root',
+        password: process.env.DB_PASSWORD || 'root',
+        database: process.env.DB_NAME || 'teamfight',
+        port: process.env.DB_PORT || '3306'
     });
 
     connection.connect(function(err) {
@@ -200,10 +201,11 @@ app.post(`${BASE_URL}/anadirFavorito`,(req,res) => {
     console.log(req.body);
 
     const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'teamfight'
+        host: process.env.DB_HOST || 'localhost',
+        user: process.env.DB_USER || 'root',
+        password: process.env.DB_PASSWORD || 'root',
+        database: process.env.DB_NAME || 'teamfight',
+        port: process.env.DB_PORT || '3306'
     });
 
     connection.connect(function (err) {
@@ -231,10 +233,11 @@ app.post(`${BASE_URL}/anadirFavorito`,(req,res) => {
 
 app.post(`${BASE_URL}/cargarFavoritos`,(req,res) =>{
     const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'teamfight'
+        host: process.env.DB_HOST || 'localhost',
+        user: process.env.DB_USER || 'root',
+        password: process.env.DB_PASSWORD || 'root',
+        database: process.env.DB_NAME || 'teamfight',
+        port: process.env.DB_PORT || '3306'
     });
 
     connection.connect(function (err) {
@@ -258,10 +261,11 @@ app.post(`${BASE_URL}/cargarFavoritos`,(req,res) =>{
 
 app.post(`${BASE_URL}/cargarFavoritosMain`,(req,res) =>{
     const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'teamfight'
+        host: process.env.DB_HOST || 'localhost',
+        user: process.env.DB_USER || 'root',
+        password: process.env.DB_PASSWORD || 'root',
+        database: process.env.DB_NAME || 'teamfight',
+        port: process.env.DB_PORT || '3306'
     });
 
     connection.connect(function (err) {
@@ -286,10 +290,11 @@ app.post(`${BASE_URL}/cargarFavoritosMain`,(req,res) =>{
 app.post(`${BASE_URL}/recuperar`,(req,res) =>{
     let usuario = req.body.nombreUsuario;
     const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'teamfight'
+        host: process.env.DB_HOST || 'localhost',
+        user: process.env.DB_USER || 'root',
+        password: process.env.DB_PASSWORD || 'root',
+        database: process.env.DB_NAME || 'teamfight',
+        port: process.env.DB_PORT || '3306'
     });
     const select = "SELECT * FROM usuarios WHERE usuario = ?";
     connection.query(select, usuario, function (err, result) {
@@ -308,10 +313,11 @@ app.post(`${BASE_URL}/login`,(req,res) => {
 
     // Conectar con la base de datos y guardar el hash de la contraseña
     const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'root',
-        database: 'teamfight'
+        host: process.env.DB_HOST || 'localhost',
+        user: process.env.DB_USER || 'root',
+        password: process.env.DB_PASSWORD || 'root',
+        database: process.env.DB_NAME || 'teamfight',
+        port: process.env.DB_PORT || '3306'
     });
 
     connection.connect(function (err) {
