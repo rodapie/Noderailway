@@ -80,7 +80,7 @@ async function registrar(){
 
     if(password.localeCompare(repetir) === 0) {
         console.log("contraseñas = " + password + " -> " + repetir);
-        const response = await fetch("/registro", {
+        const response = await fetch(`${BASE_URL}/registro`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
