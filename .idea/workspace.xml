@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+<<<<<<< Updated upstream
+    <list default="true" id="8a38d094-4917-4bd3-8d2a-127c954bbeeb" name="Changes" comment="muchos cambios">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teamfight/src/apps/league.js" beforeDir="false" afterPath="$PROJECT_DIR$/teamfight/src/apps/league.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teamfight/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/teamfight/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teamfight/src/public/league.css" beforeDir="false" afterPath="$PROJECT_DIR$/teamfight/src/public/league.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teamfight/src/public/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/teamfight/src/public/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teamfight/src/views/partials/lateral.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/teamfight/src/views/partials/lateral.ejs" afterDir="false" />
+    </list>
+=======
+    <list default="true" id="8a38d094-4917-4bd3-8d2a-127c954bbeeb" name="Changes" comment="ya enlaza con la pagina de partida" />
+>>>>>>> Stashed changes
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OEwg3I4Oysbc8jE7IzDNUuBf68" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Miguelo/Documents/TeamFight&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User1\Documents\GitHub\TeamFight\teamfight\src\views" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a38d094-4917-4bd3-8d2a-127c954bbeeb" name="Changes" comment="" />
+      <created>1681139158336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681139158336</updated>
+      <workItem from="1681139159593" duration="418000" />
+      <workItem from="1681367376098" duration="26000" />
+      <workItem from="1681367419740" duration="1402000" />
+      <workItem from="1681368862846" duration="62000" />
+      <workItem from="1681369012754" duration="23786000" />
+      <workItem from="1681394407795" duration="115000" />
+      <workItem from="1681403867704" duration="3233000" />
+      <workItem from="1681714737806" duration="17619000" />
+      <workItem from="1681800993587" duration="17086000" />
+      <workItem from="1681886170688" duration="23799000" />
+      <workItem from="1681972989370" duration="3899000" />
+      <workItem from="1681976931698" duration="14399000" />
+      <workItem from="1682058874355" duration="19579000" />
+      <workItem from="1682318482490" duration="22276000" />
+<<<<<<< Updated upstream
+      <workItem from="1682406313267" duration="19225000" />
+      <workItem from="1682593668310" duration="8385000" />
+      <workItem from="1682666760545" duration="17526000" />
+      <workItem from="1682690211814" duration="112000" />
+      <workItem from="1683095626033" duration="4779000" />
+=======
+      <workItem from="1682406313267" duration="19291000" />
+>>>>>>> Stashed changes
+    </task>
+    <task id="LOCAL-00001" summary="cambia normbre de usuario y borra la sesion actual para cargar nuevo perfil">
+      <created>1681391999755</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681391999755</updated>
+    </task>
+    <task id="LOCAL-00002" summary="imagenes de campeones">
+      <created>1681392132980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681392132980</updated>
+    </task>
+    <task id="LOCAL-00003" summary="algo">
+      <created>1681392217473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681392217473</updated>
+    </task>
+    <task id="LOCAL-00004" summary="colores">
+      <created>1681394421949</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681394421949</updated>
+    </task>
+    <task id="LOCAL-00005" summary="colores">
+      <created>1681394451508</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681394451508</updated>
+    </task>
+    <task id="LOCAL-00006" summary="una pila de cosas">
+      <created>1681480621175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681480621175</updated>
+    </task>
+    <task id="LOCAL-00007" summary="rango y tipos de colas">
+      <created>1681730399312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681730399312</updated>
+    </task>
+    <task id="LOCAL-00008" summary="rango y tipos de colas">
+      <created>1681731852222</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681731852222</updated>
+    </task>
+    <task id="LOCAL-00009" summary="rango y tipos de colas">
+      <created>1681732418304</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681732418304</updated>
+    </task>
+    <task id="LOCAL-00010" summary="rango y tipos de colas">
+      <created>1681733081369</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681733081369</updated>
+    </task>
+    <task id="LOCAL-00011" summary="rango y tipos de colas">
+      <created>1681733137515</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681733137515</updated>
+    </task>
+    <task id="LOCAL-00012" summary="rango y tipos de colas">
+      <created>1681737724801</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681737724801</updated>
+    </task>
+    <task id="LOCAL-00013" summary="rango y tipos de colas">
+      <created>1681810369949</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681810369949</updated>
+    </task>
+    <task id="LOCAL-00014" summary="modales">
+      <created>1681816241556</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1681816241556</updated>
+    </task>
+    <task id="LOCAL-00015" summary="sweetAlert y fontawesome en index.ejs">
+      <created>1681818008966</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681818008966</updated>
+    </task>
+    <task id="LOCAL-00016" summary="funciona el registro">
+      <created>1681899367618</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681899367618</updated>
+    </task>
+    <task id="LOCAL-00017" summary="funciona el registro">
+      <created>1681998780829</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681998780829</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ampliando r6">
+      <created>1682085487273</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682085487273</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ampliando r6">
+      <created>1682340191240</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682340191240</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ampliando r6">
+      <created>1682344398673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682344398673</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ya enlaza con la pagina de partida">
+      <created>1682420928729</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1682420928729</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ya enlaza con la pagina de partida">
+<<<<<<< Updated upstream
+      <created>1682583738399</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682583738399</updated>
+    </task>
+    <task id="LOCAL-00023" summary="cambio en el css">
+      <created>1682584611761</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682584611761</updated>
+    </task>
+    <task id="LOCAL-00024" summary="cambio en el css">
+      <created>1682600682204</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1682600682204</updated>
+    </task>
+    <task id="LOCAL-00025" summary="muchos cambios">
+      <created>1682690287865</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682690287865</updated>
+    </task>
+    <task id="LOCAL-00026" summary="muchos cambios">
+      <created>1683097703426</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1683097703426</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+=======
+      <created>1682431293736</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682431293736</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+>>>>>>> Stashed changes
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ya funciona el cargar datos de la api" />
+    <MESSAGE value="cambia normbre de usuario y borra la sesion actual para cargar nuevo perfil" />
+    <MESSAGE value="imagenes de campeones" />
+    <MESSAGE value="algo" />
+    <MESSAGE value="colores" />
+    <MESSAGE value="una pila de cosas" />
+    <MESSAGE value="rango y tipos de colas" />
+    <MESSAGE value="modales" />
+    <MESSAGE value="sweetAlert y fontawesome en index.ejs" />
+    <MESSAGE value="funciona el registro" />
+    <MESSAGE value="ampliando r6" />
+    <MESSAGE value="ya enlaza con la pagina de partida" />
+    <MESSAGE value="cambio en el css" />
+    <MESSAGE value="ultimo de hoy" />
+    <MESSAGE value="muchos cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="muchos cambios" />
+  </component>
+</project>

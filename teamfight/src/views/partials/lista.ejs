@@ -1,0 +1,48 @@
+<div id="tabla">
+    <table class="h-auto">
+        <h1></h1>
+        <template id ="plantillaPartida">
+
+            <tr class ="info-partida" id="info-partida" >
+                <td id="resultado"></td>
+                <td id="imagenCampeon">
+                    <p class="resultado" id="resultado"></p>
+                    <img id="imagenCampeonPartida" alt="aqui va una imagen" src="">
+                    <span id="championLevel" class="champion-level"></span>
+                </td>
+                <td id="dataPartida">
+                    <p id="kd"></p>
+                    <p class="kda"></p>
+                    <p class="kda"></p>
+                </td>
+
+                <td id="resumenPartida">
+
+                    <div id="modoRolDuracion">
+                        <p id ="kp"></p>
+                        <p id="cs"></p>
+                        <p id="rol"></p>
+                        <p id="modo-juego"> </p>
+                        <p id="duracion"></p>
+
+                        <p id="dmgDealt" style="display:none"></p>
+                        <p id="matchId" class="matchId" style="display:none !important"></p>
+                    </div>
+                    <div id="items" style ="display: inline-flex; position: relative">
+                        <ul id="listaItems">
+
+                        </ul>
+                        <div id="divboton" style="position:absolute; left:75.5%"> <li style="list-style: none"><button id="botonBuscar" class="" value="Ver Partida" onclick="obtenerDatos(event)">Ver Partida</button></li></div>
+                    </div>
+
+                </td >
+            </tr>
+        </template>
+
+        <div id="tabla_partidas" class="">
+            <div id="borrar">
+
+            </div>
+        </div>
+    </table>
+</div>

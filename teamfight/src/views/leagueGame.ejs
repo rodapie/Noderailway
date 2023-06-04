@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="/leagueGame.css">
+    <link rel="stylesheet" href="/main.css">
+    <!-- <link rel="stylesheet" href="/league.css"> -->
+</head>
+<body class="bg-secondary bg-opacity-25">
+    <div id="fondo" class="fondoLol" ></div>
+<%- include('partials/navigationLeague') %>
+
+
+<div class="" id="perfil" style="margin-bottom:2%;">
+    <!--    &lt;!&ndash;Carpeta img tiene una mascara que se llama static  &ndash;&gt;-->
+    <!--    -->
+
+    <div class="container">
+        <div class="perfilGame">
+            <div id = "perfil" class="perfilInGame" style="box-shadow:none;">
+                <h3 id="eloString" style="display:none">challenger</h3>
+                <p id="gameMode" style="text-align:center;"></p>
+                <img id="img-rango" class="" src="/static/placeholder.jpg" alt="Img Invocador">
+            </div>
+            <div class="nombreGame">
+                <h1 id="NombreCuenta"></h1></div>
+            
+                    
+                            <div class="chart" style="display:none;"></div>
+                     
+                        
+                       <div class="daños">
+                        
+                        <p id="danoFisico"></p>
+                        <p id="danoMagico"></p>
+                        <p id="danoVerdadero"></p>
+                        <p id="danoTotal"></p>
+                       </div>
+                     
+             
+                        
+                        <!-- <img id="imgRango" src="/static/placeholder.jpg" alt=""> -->
+                   
+                    </div>
+        </div>
+    </div>
+</div>
+<img src="/static/cargando.gif" alt="" id="cargando" class="hidden">
+
+<!-- <div class="sidebar">
+    <ul class="sidebarList">
+        <li class="">
+            <a class=""  href="/league">League of Legends</a>
+        </li>
+        <li class="">
+            <a class="" href="/siege">Siege</a>
+        </li>
+
+    </ul>
+    <div style=""></div>
+</div> -->
+
+
+<div class="main-content">
+
+    
+    <!-- <h1 id="error"></h1> -->
+    
+    <div id="tablas">
+
+
+        <%- include('partials/partida') %>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="../apps/jquery-3.6.4.js"></script>
+<script src="../apps/leagueGame.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<%- include('partials/scripts') %>
+</body>
+<%- include('partials/footer') %>
+
+</html>

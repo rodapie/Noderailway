@@ -1,0 +1,35 @@
+{
+  "name": "teamfight",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.2.3",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.1.1",
+    "crypto.js": "^3.1.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jquery": "^3.6.4",
+    "jsdom": "^22.0.0",
+    "mongodb": "^5.5.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "r6s-stats-api": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "description": ""
+}

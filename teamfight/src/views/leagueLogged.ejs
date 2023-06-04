@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="/league.css">
+</head>
+<body class="bg-secondary bg-opacity-25">
+<div class="fondoLolLogueado"></div>
+<%- include('partials/navigationLeagueLogged') %>
+
+<div class="d-flex flex flex-md-row align-items-center row g-1 " id="perfil">
+    <div id="perfilContainer" class="container hidden">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <img id="img-perfil" class="float-right" src="/static/placeholder.jpg" alt="Img Invocador">
+            </div>
+            <div class="col-4">
+                <h1 id="NombreCuenta" class="align-self-center"></h1>
+            </div>
+            <div class="col-4">
+
+                    <div class="col d-flex d-inline-flex">
+                        <h3 id="rango" class="align-self-center"></h3>
+                        <img id="imgRango" src="" alt="imagen rango">
+                    </div>
+
+            </div>
+            <div class="row">
+                <div id="tag" class="align-middle col-4">
+                    <label for="TagSelector">Añadir a un grupo:</label>
+                    <input list="tag-list" id="TagSelector" name="TagSelector" >
+
+                    <datalist id="tag-list" >
+
+                    </datalist>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<svg id="cargando" class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+            <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+        </linearGradient>
+        <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+        </linearGradient>
+    </defs>
+    <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
+    <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
+</svg>
+
+
+<div class="main-content">
+    <h1 id="error"></h1>
+
+
+<div id="tablasLogged">
+
+
+    <%- include('partials/lateral') %>
+
+
+    <%- include('partials/lista') %>
+</div>
+
+</div>
+
+
+</body>
+<%- include('partials/footer') %>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="../apps/leagueLogged.js"></script>
+<%- include('partials/scripts')%>
+</html>

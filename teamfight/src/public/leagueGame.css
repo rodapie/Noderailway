@@ -1,0 +1,624 @@
+
+#perfilInGame{
+    background-color: transparent !Important;
+}
+.sidebarList li {
+    margin-bottom:0px !important;
+}
+#gameMode{
+    margin-top:20%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0 !important;
+}
+
+li {
+    background-color: #333;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    margin: 0;
+    padding: 0px !important;
+}
+
+/* li:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+} */
+
+ul, li p {
+    color:white;
+}
+
+li:hover {
+    background-color: #444;
+    /* box-shadow: 0 0 5px #fff;*/
+    box-shadow: 0 0 5px #6610f2 ;
+}
+
+/* .campeonImagen {
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+} */
+
+input::placeholder {
+    color: transparent;
+    transition: color 1s ease;
+    /* text-align: center; */
+    font-size: 22px;
+}
+
+input:hover::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+input:hover {
+    width: 350px !important;
+    /* background: #3b3640; */
+    border-radius: 10px;
+    height: 60px !important;
+    background: #3b3640;
+    border-radius: 10px;
+    /* background-image: none !important; */
+    color: white;
+    border: 4px solid #6610f2;
+    background-size: 30px 30px !important;
+    background-repeat: no-repeat !important ;
+    background-position: right !important;
+}
+
+.chart {
+
+    border-radius: 50%;
+    width: 17%;
+    height: 72%;
+    margin-top: 3%;
+    margin-left: 2%;
+
+}
+
+.fondoLol{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: transparent;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+
+    background-attachment: fixed;
+    background-image: url('../../static/fondoLogged.jpg');
+}
+
+.fondoLol::before {
+    content: "";
+    z-index: 2;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5) 70%);
+}
+
+.internoFlex li{
+    display:flex;
+    align-items:center;
+    height: 100px;
+    width: 107%;
+}
+
+.internoIzquierdo2{
+    position: relative;
+    left: 34%;
+    width: 60%;
+
+}
+.internoDerecha2{
+    position: relative;
+    left: 0%;
+    width: 60%;
+}
+@media (max-width: 1880px) {
+    #items img.item{
+        width:40px;
+    }
+    button{
+        position: relative !important;
+        left: -20% !important;
+    }
+    #imagenCampeonPartida{
+        position: absolute;
+        width: 80%;
+        top: 41%;
+    }
+    .champion-level{
+        top: 82%;
+        right: 7px;
+    }
+}
+@media(max-width:1650px){
+    /* #perfil {
+        margin-left: 24% !important;
+        width: 57% !important;
+    }
+    #img-perfil {
+        border-radius: 20px;
+        width: 79%;
+        height: auto;
+        margin: 15%;
+        margin-left: -96%;
+    } */
+    #gameMode{
+        display:none;
+
+    }
+    #dataInGame{
+        display: none;
+    }
+}
+
+
+@media(max-width:1600px){
+    .contenedorFlex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        left: -5%;
+    }
+    .internoIzquierdo2{
+        position: relative;
+        left: 12% !important;
+        width: 60%;
+
+    }
+    .internoFlex li {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 147%;
+    }
+
+}
+
+@media(max-width:1500px){
+
+    #duracion{
+        display: none;
+    }
+    #img-perfil {
+        margin-top:37%;
+    }
+    #rango{
+        display: none;
+    }
+    #imgRango{
+        max-width: 100px;
+        margin-left: 57%;
+    }
+    #NombreCuenta{
+        margin-top: 23%;
+        margin-left: 28%;
+        margin-bottom: 4%;
+    }
+    button{
+        width: 85px !important;
+        height: 63px !important;
+    }
+    #gamesJugados{
+        display: none;
+    }
+    #campeonLateral{
+        display: none;
+    }
+    #tabla_campeones{
+        /* margin-left: 26% !important;
+        background-color: none !Important; */
+        width:15% !important;
+    }
+    #tablaCampeones{
+        width:15%;
+    }
+
+    #img-rango {
+
+        margin-top: 25% !important;
+
+    }
+    .perfilInGame{
+        position: relative;
+        top: 14%;
+        background-color: transparent !important;
+    }
+
+}
+
+
+@media(max-width:1400px){
+
+
+    #imagenCampeonPartida{
+        position: absolute;
+        width: 63%;
+        top: 49%;
+        left:22%;
+    }
+    #modoRolDuracion{
+        display: none;
+    }
+    button{
+        position: absolute !important;
+        top: 62px;
+        left: -260px !important;
+        width: 218px !important;
+        height: 38px !important;
+
+    }
+    #perfil{
+        display: none;
+    }
+    .contenedorFlex{
+        margin-top: 18%;
+    }
+
+}
+
+@media(max-width:1300px){
+
+    button{
+        left:-190px !important;
+    }
+}
+@media (max-width: 1200px){
+    .internoFlex li {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 182%;
+    }
+    .internoIzquierdo2 {
+        position: relative;
+        left: -9% !important;
+        width: 60%;
+    }
+}
+@media(max-width:1170px){
+    button{
+        width:120px !Important;
+        left: -122px !Important;
+    }
+    #items img.item {
+        width: 30px;
+    }
+
+}
+
+@media(max-width:1000px){
+    #tablaCampeones{
+        display: none;
+    }
+    .info-partida{
+        width: 200%;
+        margin-left: -31%;
+    }
+    #items img.item {
+        width: 40px;
+    }
+    button {
+        width: 181px !Important;
+        left: -229px !Important;
+    }
+    #items{
+        margin-left: 17%;
+    }
+    #img-perfil{
+        margin-top: 86%;
+        width:100%;
+    }
+    #imgRango{
+        margin-top: 27%;
+    }
+    #NombreCuenta{
+        margin-top: 34%;
+        margin-left: 28%;
+        margin-bottom: 4%;
+    }
+
+    .racha{
+        display:none;
+    }
+
+}
+
+@media(max-width:900px){
+    internoDerecha2 {
+        position: relative;
+        left: -9%;
+        width: 60%;
+    }
+    .internoFlex li {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 136%;
+    }
+    .internoIzquierdo2 {
+        position: relative;
+        left: 2% !important;
+        width: 60%;
+    }
+    .internoDerecha2 {
+        position: relative;
+        left: 2%;
+        width: 60%;
+    }
+    .itemsInGame{
+        margin-left: 32%;
+    }
+    .itemsInGame img{
+        width:40px;
+    }
+}
+
+@media(max-width:840px){
+    .itemsInGame {
+        margin-left:0%;
+    }
+}
+
+
+
+@media (max-width: 800px){
+    #imgRango {
+        margin-top: 40%;
+        margin-left: 15%;
+        margin-bottom: 9%;
+    }
+    #nombreCuenta{
+        font-size: 25px;
+    }
+    #img-perfil{
+        width: 155%;
+        margin-top:100%;
+    }
+    #listaItems{
+        width: 100%;
+        list-style: none;
+        display: inline-flex;
+        margin-left: -16%;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 750px){
+    #NombreCuenta {
+        margin-top: 62%;
+        margin-left: 28%;
+        margin-bottom: 4%;
+        font-size: 22px;
+    }
+    #img-perfil{
+        margin-top: 160%;
+    }
+    #imgRango{
+        margin-bottom: -5%;
+    }
+
+}
+
+@media(max-width:715px){
+    #items img.item {
+        width: 32px;
+    }
+}
+
+@media(max-width:700px){
+    .internoFlex li {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 171%;
+    }
+    .internoIzquierdo2 {
+        position: relative;
+        left: -17% !important;
+        width: 60%;
+    }
+    .internoDerecha2 {
+        position: relative;
+        left: -17%;
+        width: 60%;
+    }
+}
+
+/* @media(max-width:680px){
+  button{
+      width: 95px !Important;
+      left: -136px !Important;
+      font-size: 12px;
+  }
+
+} */
+
+@media(max-width:675px){
+    #img-perfil{
+        display:none;
+    }
+    #imgRango{
+        display:none;
+    }
+    #items img.item {
+        width: 40px;
+    }
+    .info-partida {
+        width: 260%;
+        margin-left: -69%;
+    }
+    #NombreCuenta {
+        margin-top: 73%;
+        margin-left: -12%;
+        margin-bottom: 4%;
+        font-size: 22px;
+        width: 300px;
+    }
+    #caja-buscar {
+        width: 12rem;
+        color: white;
+        margin-left: -39%;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .info-partida {
+        width: 340%;
+        margin-left: -120%;
+    }
+    #perfil{
+        visibility: hidden;
+    }
+
+
+}
+
+@media(max-width:550px){
+    #items img.item {
+        width: 30px;
+    }
+    button {
+        width: 101px !Important;
+        left: -168px !Important;
+        font-size: 12px;
+    }
+    .internoIzquierdo2 {
+        position: relative;
+        left: -38% !important;
+        width: 71%;
+        margin-top: 8% !Important;
+    }
+    .internoDerecha2 {
+        position: relative;
+        left: -39%;
+        width: 73%;
+    }
+}
+@media(max-width:500px){
+    .itemsInGame img{
+        width:30px;
+    }
+    .internoIzquierdo2{
+        margin-top: 20% !Important;
+    }
+}
+
+
+@media(max-width:480px){
+    .info-partida {
+        width: 340%;
+        margin-left: -165%;
+    }
+}
+
+@media(max-width:440px){
+    .info-partida {
+        width: 393%;
+        margin-left: -184%;
+    }
+}
+
+@media(max-width:420px){
+    #dataPartida{
+        display: none;
+    }
+    .info-partida {
+        width: 393%;
+        margin-left: -184%;
+        height: 129px;
+    }
+    #imagenCampeonPartida {
+        position: absolute;
+        width: 63%;
+        top: 92%;
+        left: 22%;
+    }
+    #items img.item {
+        width: 23px;
+    }
+    button{
+        top: 40px;
+        left: -102px !Important;
+    }
+    #NombreCuenta {
+        margin-top: 73%;
+        margin-left: -70%;
+        margin-bottom: 4%;
+        font-size: 22px;
+        width: 300px;
+    }
+}
+
+@media(max-width:400px){
+    .info-partida {
+        width: 400%;
+        margin-left: -224%;
+        height: 129px;
+    }
+}
+
+@media(max-width:370px){
+    .internoIzquierdo2 {
+        margin-top: 30% !Important;
+    }
+    .internoFlex li{
+        width:150%;
+    }
+    .internoIzquierdo2 {
+        position: relative;
+        left: -26% !important;
+        width: 71%;
+        margin-top: 8% !Important;
+        margin-top: 25% !Important;
+    }
+    .internoDerecha2 {
+        position: relative;
+        left: -28%;
+        width: 73%;
+    }
+}
+
+@media(max-height:860px){
+    #caja-buscar {
+        max-width: 15rem;
+        max-height: 60%;
+        color: white;
+        margin-top: -4%;
+    }
+}
+
+@media(max-height){
+    #logo{
+        width:30px;
+    }
+    #caja-buscar {
+        max-width: 15rem;
+        max-height: 60%;
+        color: white;
+        margin-top: 3%;
+    }
+}

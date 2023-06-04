@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="/league.css">
+    
+</head>
+<body class="bg-secondary bg-opacity-25" id="main">
+<div id="fondo" class="fondoLol" ></div>
+<%- include('partials/navigationLeague') %>
+
+
+<div class=" " id="perfil">
+    <div id="perfilContainer" class="container hidden">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <img id="img-perfil" class="float-right" src="/static/placeholder.jpg" alt="Img Invocador">
+            </div>
+            <div class="col-4" style="    flex: 0 0 auto;
+            width: 36.333333% !important;">
+                <h1 id="NombreCuenta" class="align-self-center"></h1>
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col d-flex d-inline-flex">
+                     
+                        <img id="imgRango" src="" alt="imagen rango">
+                        <h3 id="rango" class="align-self-center"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<svg id="cargando" class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+            <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+        </linearGradient>
+        <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+            <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+        </linearGradient>
+    </defs>
+    <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
+    <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
+</svg>
+
+<!-- <div class="sidebar">
+    <ul class="sidebarList">
+        <li class="">
+            <a class=""  href="/league">
+                <img src="static/ligoleyenlogo.jpg" style="width:20%" alt="Imagen de League of Legends"> 
+                League of Legends
+            </a>
+        </li>
+        <li class="">
+            <a class="" href="/siege">
+                <img src="static/r6logo.jpg" style="width:20%" alt="Imagen de Siege"> 
+                Siege
+            </a>
+        </li>
+    </ul>
+</div> -->
+
+<div class="main-content">
+    <h1 id="error"></h1>
+
+    <div id="tablas">
+
+        <%- include('partials/lateral') %>
+        <%- include('partials/modalLogin')%>
+
+        <%- include('partials/lista') %>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="../apps/league.js"></script>
+
+</body>
+<%- include('partials/footer') %>
+<%- include('partials/scripts')%>
+</html>

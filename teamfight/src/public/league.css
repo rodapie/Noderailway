@@ -1,0 +1,1138 @@
+/* body{
+    margin: 0; 
+    padding: 0;
+    background: #19161c;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+} */
+/* .box{
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: 4px solid #ffd52d;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #ffd52d;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #ffd52d;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+} */
+
+
+input::placeholder {
+    color: transparent;
+    transition: color 1s ease;
+    /* text-align: center; */
+    font-size: 22px;
+}
+
+input:hover::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+input text:hover {
+    width: 350px !important;
+    /* background: #3b3640; */
+    border-radius: 10px;
+    height: 60px !important;
+    background: #3b3640;
+    border-radius: 10px;
+    /* background-image: none !important; */
+    color: white;
+    border: 4px solid #6610f2;
+    background-size: 30px 30px !important;
+    background-repeat: no-repeat !important ;
+    background-position: right !important;
+}
+
+/*Fondo*/
+#main {
+    position: relative;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+.hidden{
+    display: none;
+}
+.oculto{
+    display: none;
+}
+
+.fondoLol{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: transparent;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+
+    background-attachment: fixed;
+    background-image: url('../../static/fondoLogged.jpg');
+}
+.fondoLol::before {
+    content: "";
+    z-index: 2;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5) 70%);
+}
+
+.fondoLolLogueado{
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: transparent;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+
+    background-attachment: fixed;
+    background-image: url('../../static/fondoLogged.jpg');
+
+
+}
+.fondoLolLogueado::before {
+    content: "";
+    z-index: 2;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5) 70%);
+}
+#listaItems{
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    margin-left: auto;
+}
+/*Perfil*/
+#perfil{
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 60%;
+    color: white;
+    background-color: #212529;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    box-shadow: var(--shadow-elevation-high-pink);
+
+}
+
+/*Tablas*/
+#tablas{
+    width: 100% !important;
+    display: flex;
+
+}
+#tablasLogged{
+    margin-top: -20%;
+    width: 100% !important;
+    display: flex;
+}
+
+#tabla{
+    /* box-shadow: var(--shadow-elevation-high); */
+    /* margin-left: 15%; */
+    margin-top: 5%;
+    width: 50%;
+    z-index: 1000;
+}
+
+#tablaCampeones{
+    margin-left: 6%;
+    margin-top: 4.4%;
+    width: 25%;
+    height: 30%;
+    background: linear-gradient(to bottom right, #1a1e23, #292d33);
+  background-size: cover;
+  color: #fff;
+  box-shadow: 10px 10px 20px rgba(200, 75, 170, 0.7);
+
+}
+#tablaCampeones p{
+    margin-top: 7%;
+}
+#tablaCampeones img{
+    margin-left: 10%;
+}
+
+#tag{
+    position: relative;
+    left:23%;
+}
+#user{
+    color: white;
+
+}
+
+#tablaCampeones #nombreCampeonLateral1 p{
+    text-align: center;
+    margin-left: 18%;
+    font-size: 26px;
+}
+#tablaCampeones #nombreCampeonLateral2 p{
+    text-align: center;
+    margin-left: 18%;
+    font-size: 26px;
+}
+#tablaCampeones #nombreCampeonLateral3 p{
+    text-align: center;
+    margin-left: 18%;
+    font-size: 26px;
+}
+
+
+#tabla_partidas{
+    margin-left: 10%;
+}
+#tabla_campeones{
+     box-shadow: var(--shadow-elevation-high);
+}
+
+.info-partida{
+    /*margin: -2%;*/
+    border-left: 1px solid ;
+    padding-right: 0.5rem;
+    padding-top: 3%;
+    display: block;
+    margin-bottom: 3%;
+    height: 16%;
+    box-shadow: 10px 10px 20px rgba(200, 75, 170, 0.2);
+    background: linear-gradient(to bottom right, #1a1e23, #292d33);
+    border-bottom: none !important;
+    width: 110%;
+    /* borde */
+    /*border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;*/
+}
+
+
+/*Tabla lateral*/
+
+#imagenCampeonLateralDiv{
+    width: 6%;
+}
+#imagenCampeonLateral{
+    width: 10%;
+}
+#infoCampeonLateral{
+    height: auto;
+
+
+}
+#infoCampeonLateral{
+    margin-top: -10%;
+}
+#campeonLateral{
+    width: 100%;
+    margin-left: 15%;
+
+}
+
+
+
+#nombreCampeonLateral{
+    margin-bottom: -5%;
+    font-size: 20px;
+
+}
+#kdLateral{
+    margin-bottom: 8%;
+}
+
+
+#kdaLateral{
+    margin-top: -15%;
+    margin-left: 12%;
+}
+#statsLateral{
+    margin-top: -5%;
+}
+#statsCampeonLateral{
+    width: 5%;
+}
+
+#wrgamesCampeonLateral{
+    width: 20%;
+    text-align: right;
+}
+#wrgamesLateral{
+    margin-top: 1%;
+}
+#gamesLateral{
+    margin-top: -15%;
+}
+.tablaCampeonesContainer{
+    position:relative;
+}
+
+#info-campeones{
+    margin-bottom: -5%;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+}
+
+#imagenCampeonLateralDiv p{
+    margin-left:18%;
+    font-size:26px;
+}
+#imagenCampeonLateralDiv2 p{
+    margin-left:18%;
+    font-size:26px;
+}
+#imagenCampeonLateralDiv3 p{
+    margin-left:18%;
+    font-size:26px;
+}
+
+
+
+
+
+
+/*Imagenes*/
+#imagenCampeon{
+    width: 10%;
+    align-items: center;
+    position: relative;
+}
+
+#imagenCampeonPartida{
+    position: absolute;
+    width: 94%;
+    top: 41%;
+    left: 4%;
+}
+
+#img-perfil{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin: 15%;
+    margin-left: -96%;
+}
+#imgRango{
+    /*width: 60%;*/
+    max-width: 100px;
+    height: auto;
+
+}
+#imagenCampeonLateral{
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.itemImagen{
+    width: 100%;
+    height: auto;
+}
+
+/*Partida*/
+
+#resultado{
+    text-align: left;
+    /* margin-top: -10%; */
+    margin-bottom: 2%;
+    /* margin-left: 2%; */
+    font-size: 25px;
+    /* border-radius: 10px; */
+    padding:4px;
+}
+
+
+.champion-level{
+    position: absolute;
+    top: 90%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+    border-radius: 35%;
+    padding: 5px;
+    z-index: 1;
+    font-size: 10px;
+    /* box-shadow: 0 0 3px rgba(0,0,0,0.3); */
+    text-align: center;
+
+}
+
+#modoRolDuracion{
+    display: inline-flex;
+    width: 100%;
+    color: white;
+    margin-left: 8%;
+
+}
+#modoRolDuracion p{
+    margin-left:10px;
+}
+#dmgDealt{
+    margin-left: auto;
+    color: white;
+}
+#rol{
+    margin-right: 3%;
+    margin-left: auto;
+    color: white;
+}
+#modo_juego{
+    color: blue;
+    margin-left: auto;
+    color: white;
+}
+
+#duracion{
+    margin-left: auto;
+    color: white;
+
+}
+
+
+#kd{
+    color: #d0b558;
+    /* margin-left: 2%; */
+    margin-left: 42%;
+
+}
+.kda{
+    font-size: 12px;
+    color: white;
+    margin-top: -14%;
+    margin-left: 31%;
+}
+#kp{
+    /* margin-left: 10%;
+    margin-top: -5%; */
+
+    color: white;
+}
+#resumenPartida{
+    width: 100%;
+    color: white;
+
+}
+#cs{
+    color: white !important;
+    font-size: 12px;
+}
+#items {
+    margin-left: 5%;
+    width: 100%;
+}
+/* @media screen and (max-width:  4096px){
+    #botonBuscar{
+        margin-left: 26%;
+    }
+} */
+
+@media screen and (max-width: 1788px) {
+
+}
+/* @media screen and (max-width: 1495px){
+
+    #tablaCampeones{
+        width: 30%;
+
+    }
+    #perfil{
+        width: 65%;
+        margin-left: 25%;
+    }
+    .fondoLol{
+        background-attachment: fixed;
+        background-repeat:no-repeat ;
+        width: 100vmax;
+        height: 100vmax;
+    }
+    .item{
+        display: none;
+    }
+    button{
+        position: relative;
+    }
+    #tablas{
+        display: inline-block;
+        margin-left: 30%;
+        overflow-scrolling: touch;
+    }
+} */
+
+/* @media screen and (max-width: 768px) {
+    body{
+        overflow-y: scroll;
+        overflow-x: auto;
+        background-attachment: fixed;
+    }
+    #navFixed{
+        height: 10%;
+    }
+    #logo{
+        margin-top: -70%;
+    }
+    .input-group{
+        margin-top: -25%;
+    }
+    .sidebar{
+        display: none;
+    }
+    .info-partida{
+     
+        border-left: 1px solid ;
+        padding-right: 0.5rem;
+        padding-top: 3%;
+        display: block;
+        margin-bottom: 3%;
+        height: 16%;
+        box-shadow: 10px 10px 20px rgba(200, 75, 170, 0.2);
+        background: linear-gradient(to bottom right, #1a1e23, #292d33);
+        border-bottom: none !important;
+        width: 110%;
+   
+    }
+    #fondo{
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    #botonBuscar{
+        margin-left: 25%;
+    }
+    #items {
+        width: 50%;
+        position: relative;
+
+
+    }
+    #tablaCampeones{
+        width: 100%;
+        height: 40%;
+        font-size: small;
+    }
+    #imagenCampeonLateralDiv{
+        width: 5%;
+    }
+    #campeonLateral{
+        margin-top: -10%;
+    }
+    p{
+        margin-top: -3%;
+    }
+
+    #tablas{
+        display: inline-block;
+    }
+    #tabla{
+        margin-left: -20%;
+        width: 100%;
+    }
+    #tablasLogged{
+        display: inline-block;
+    }
+    #kp,#cs,#duracion{
+        font-size: 12px;
+    }
+
+    #tabla_partidas{
+        height: 50%;
+        overflow-x: scroll;
+    }
+    ul{
+        -webkit-column-count: 3;  
+        -moz-column-count: 3; 
+        column-count: 3;
+
+        -webkit-column-gap: 10px; 
+        -moz-column-gap: 10px; 
+        column-gap: 10px;
+
+    }
+    button{
+        font-size: 12px;
+    }
+    .item{
+       display: none;
+    }
+    button {
+        background: linear-gradient(to right, #6610f2, #4d0099, #000000);    border: none;
+        border-radius: 24px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        outline: none;
+        padding: 3px 16px;
+        transition: all 0.3s ease;
+        width: 40px;
+        height: 50px;
+        margin: 0 auto;
+     
+        position: absolute;
+
+    }
+    #botonBuscar{
+        margin-right: auto;
+    }
+
+    #botonBuscar:hover{
+        
+        background: #6610f2;
+        box-shadow: #5E5DF0 0 10px 20px -10px;
+        transform: scale(1.1);
+    }
+} */
+
+#listaItems{
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    margin-left: auto;
+    padding-left: 5%;
+}
+
+/*Buscar*/
+#region {
+    background-color: #333333;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    margin-right: 0.5rem;
+    max-width: 6rem;
+}
+
+#region option {
+    background-color: #333333;
+    color: white;
+}
+
+#region option:hover {
+    background-color: #555555; /* Cambia el color de fondo al pasar el cursor */
+}
+
+#containerBuscadorLol{
+    align-items: center;
+}
+
+/*Buscar partida*/
+button {
+    background: linear-gradient(to right, #6610f2, #4d0099, #000000);    border: none;
+    border-radius: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    outline: none;
+    padding: 3px 16px;
+    transition: all 0.3s ease;
+    width: 130px;
+    height: 50px;
+    margin: 0 auto;
+    /* position: relative;
+    right: 52%; */
+    position: absolute;
+    left: -7%;
+  }
+
+#botonBuscar:hover{
+    /*background: #5E5DF0;*/
+    /* background: #9549bb; */
+    background: #6610f2;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    transform: scale(1.1);
+}
+
+/*Resultados*/
+.victoria{
+    color: #4CAF50;
+    padding: 8px 12px;
+    /* border-left: 6px solid #4CAF50; */
+    border-bottom: 1px solid #4CAF50;
+    padding-bottom: 4%;
+    }
+    
+    .derrota{
+    color: #FF5252;
+    padding: 8px 12px;
+    /* border-left: 6px solid #FF5252; */
+    border-bottom: 1px solid #FF5252;
+    padding-bottom: 4%;
+    }
+    .remake{
+        color: grey;
+        padding: 8px 12px;
+        /* border-left: 6px solid #4CAF50; */
+        border-bottom: 1px solid grey;
+        padding-bottom: 4%;
+    }
+.textoDerrota{
+    background-color:red !Important;
+}
+.matchId{
+    display: none;
+}
+.favoritos{
+    color:white;
+    background-color: #000000;
+    margin-top: 10%;
+}
+
+.favorito{
+    display: inline-flex;
+}
+
+
+
+
+#kp, #cs, #rol, #modo-juego,#duracion #dmgDealt {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+
+
+
+  /* linea superior de invocador elo... */
+
+  #perfilContainer{
+    margin-left:15%;
+
+  }
+
+:root {
+    --hue: 223;
+    --bg: hsl(var(--hue),10%,90%);
+    --fg: hsl(var(--hue),10%,10%);
+
+}
+.pl {
+    display: block;
+    width: 6.25em;
+    height: 6.25em;
+}
+.pl__ring, .pl__ball {
+    animation: ring 2s ease-out infinite;
+}
+.pl__ball {
+    animation-name: ball;
+}
+/* Animation */
+@keyframes ring {
+    from {
+        stroke-dasharray: 0 257 0 0 1 0 0 258;
+    }
+    25% {
+        stroke-dasharray: 0 0 0 0 257 0 258 0;
+    }
+    50%, to {
+        stroke-dasharray: 0 0 0 0 0 515 0 0;
+    }
+}
+@keyframes ball {
+    from, 50% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: 1;
+    }
+    64% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -109;
+    }
+    78% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -145;
+    }
+    92% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -157;
+    }
+    57%, 71%, 85%, 99%, to {
+        animation-timing-function: ease-out;
+        stroke-dashoffset: -163;
+    }
+}
+
+.navbarLeague{
+    background-color: #212529;
+    height:11%;
+}
+
+/* Responsive */
+@media (max-width: 1880px) {
+    #items img.item{
+        width:40px;
+    }
+    button{
+        position: relative !important;
+        left: -20% !important;
+    }
+    #imagenCampeonPartida{
+        position: absolute;
+        width: 80%;
+        top: 41%;
+    }
+    .champion-level{
+        top: 82%;
+        right: 7px;
+    }
+}
+@media(max-width:1650px){
+    #perfil {
+        margin-left: 24% !important;
+        width: 57% !important;
+    }
+    #img-perfil {
+        border-radius: 20px;
+        width: 79%;
+        height: auto;
+        margin: 15%;
+        margin-left: -96%;
+    }
+
+}
+
+@media(max-width:1500px){
+
+    #duracion{
+        display: none;
+    }
+    #img-perfil {
+        margin-top:37%;
+    }
+    #rango{
+        display: none;
+    }
+    #imgRango{
+        max-width: 100px;
+        margin-left: 57%;
+    }
+    #NombreCuenta{
+        margin-top: 23%;
+        margin-left: 28%;
+        margin-bottom: 4%;
+    }
+    button{
+        width: 85px !important;
+        height: 63px !important;
+    }
+    #gamesJugados{
+        display: none;
+    }
+    #campeonLateral{
+        display: none;
+    }
+    #tabla_campeones{
+        /* margin-left: 26% !important;
+        background-color: none !Important; */
+        width:15% !important;
+    }
+    #tablaCampeones{
+        width:15%;
+    }
+    
+}
+
+
+@media(max-width:1400px){
+
+   
+    #imagenCampeonPartida{
+        position: absolute;
+        width: 63%;
+        top: 49%;
+        left:22%;
+    }
+    #modoRolDuracion{
+        display: none;
+    }
+    button{
+        position: absolute !important;
+        top: 62px;
+        left: -260px !important;
+        width: 218px !important;
+        height: 38px !important;
+    
+    }
+    #imgRango{
+        margin-left: 30%;
+    }
+}
+
+@media(max-width:1300px){
+
+button{
+    left:-190px !important;
+}
+}
+
+
+@media(max-width:1170px){
+button{
+    width:120px !Important;
+    left: -122px !Important;
+}
+#items img.item {
+    width: 30px;
+}
+
+}
+
+@media(max-width:1000px){
+    #tablaCampeones{
+        display: none;
+    }
+    .info-partida{
+        width: 200%;
+        margin-left: -31%;
+    }
+    #items img.item {
+        width: 40px;
+    }
+    button {
+        width: 181px !Important;
+        left: -229px !Important;
+    }
+    #items{
+        margin-left: 17%;
+    }
+    #img-perfil{
+        margin-top: 86%;
+        width:100%;
+    }
+    #imgRango{
+        margin-top: 27%;
+    }
+    #NombreCuenta{
+        margin-top: 34%;
+        margin-left: 28%;
+        margin-bottom: 4%;
+    }
+    
+}
+
+@media (max-width: 800px){
+#imgRango {
+    margin-top: 40%;
+    margin-left: 15%;
+    margin-bottom: 9%;
+}
+#nombreCuenta{
+    font-size: 25px;
+}
+#img-perfil{
+    width: 155%;
+    margin-top:100%;
+}
+#listaItems{
+    width: 100%;
+    list-style: none;
+    display: inline-flex;
+    margin-left: -16%;
+    padding-left: 5%;
+}
+}
+
+@media (max-width: 750px){
+    #NombreCuenta {
+        margin-top: 62%;
+        margin-left: 28%;
+        margin-bottom: 4%;
+        font-size: 22px;
+        }
+        #img-perfil{
+            margin-top: 160%;
+        }
+        #imgRango{
+            margin-bottom: -5%;
+        }
+        
+    }
+
+@media(max-width:715px){
+    #items img.item {
+        width: 32px;
+    }
+}
+
+/* @media(max-width:680px){
+    button{
+        width: 95px !Important;
+        left: -136px !Important;
+        font-size: 12px;
+    }
+
+} */
+
+@media(max-width:675px){
+    #img-perfil{
+        display:none;
+        }
+    #imgRango{
+            display:none;
+        }
+        #items img.item {
+            width: 40px;
+        }
+        .info-partida {
+            width: 260%;
+            margin-left: -69%;
+        }
+        #NombreCuenta {
+            margin-top: 73%;
+            margin-left: -12%;
+            margin-bottom: 4%;
+            font-size: 22px;
+            width: 300px;
+        }
+        #caja-buscar {
+            width: 12rem;
+            color: white;
+            margin-left: -39%;
+        }
+}
+
+
+@media(max-width:600px){
+
+    .info-partida {
+        width: 340%;
+        margin-left: -120%;
+    }
+    #perfil{
+        visibility: hidden;
+    }
+    
+
+}
+
+@media(max-width:550px){
+    #items img.item {
+        width: 30px;
+    }
+    button {
+        width: 101px !Important;
+        left: -168px !Important;
+        font-size: 12px;
+    }
+}
+@media(max-width:480px){
+    .info-partida {
+        width: 340%;
+        margin-left: -165%;
+    }
+}
+
+@media(max-width:440px){
+    .info-partida {
+        width: 393%;
+        margin-left: -184%;
+    }
+}
+
+@media(max-width:420px){
+    #dataPartida{
+        display: none;
+    }
+    .info-partida {
+        width: 393%;
+        margin-left: -184%;
+        height: 129px;
+    }
+    #imagenCampeonPartida {
+        position: absolute;
+        width: 63%;
+        top: 92%;
+        left: 22%;
+    }
+    #items img.item {
+        width: 23px;
+    }
+    button{
+        top: 40px;
+        left: -102px !Important;
+    }
+    #NombreCuenta {
+        margin-top: 73%;
+        margin-left: -70%;
+        margin-bottom: 4%;
+        font-size: 22px;
+        width: 300px;
+    }
+}
+
+@media(max-width:400px){
+    .info-partida {
+        width: 400%;
+        margin-left: -224%;
+        height: 129px;
+    }
+}
+
+@media(max-height:860px){
+    #caja-buscar {
+        max-width: 15rem;
+        max-height: 60%;
+        color: white;
+        margin-top: 0%;
+    }
+}
+
+@media(max-height){
+    #logo{
+        width:30px;
+    }
+    #caja-buscar {
+        max-width: 15rem;
+        max-height: 60%;
+        color: white;
+        margin-top: 0%;
+    }
+}

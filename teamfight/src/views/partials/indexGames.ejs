@@ -1,0 +1,58 @@
+<div class=" indexGames">
+                <div class=" ">
+                    <div class="row">
+                        <!-- <div class="col">
+                            <h5><b>Selecciona el juego</b></h5>
+                        </div> -->
+                    </div>
+                    <div class="radio-group  a contenedorJuegos">
+                        
+                        <div id="radiosiege"class="  radio  radiosiege" value="siege">
+                            <div class="">
+                               <!-- id="r6margin" Esto estaba en el dib de abajo, de clase pic. -->
+                                    <div class="pic" > <img class=" logoIndex" src="../../static/r6logo2.jpg" style="border-radius:10px;" width="140px" height="140px"> </div>
+                                    <!-- <p>Siege</p> -->
+                               
+                            </div>
+                        </div>
+                        <div id="lolradio" class="  radio radiolol  selected " value="lol">
+                            <div class="">
+                               
+                                    <div class="pic"> <img class=" logoIndex" src="../../static/logolol2.png"  width="140px" height="140px"> </div>
+                                    <!-- <p>League of legends</p> -->
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contenido" class="container d-flex justify-content-center align-items-center vh-50">
+                    <div id="formulario" class="">
+                        <div class="inputsIndex">
+                            <div  id="buscartext" class="col-md-7">
+                                <input id ="buscarInput" type="text" class="" placeholder="Buscar...">
+                            </div>
+                            <div id ="lol" class="col-md-3">
+                                <select id ="region" class=" form-select" aria-label="Filtro de búsqueda">
+                                    <option selected value="euw">EUW</option>
+                                    <option value="na">NA</option>
+                                    <option value="kr">KR</option>
+                                    <option value="lan">LAN</option>
+                                    <option value="las">LAS</option>
+                                    <option value="ch">CH</option>
+                                </select>
+                            </div>
+                            <div id="siege" class="col-md-3 hidden">
+                                <select id ="plataforma" class="form-select" aria-label="Filtro de búsqueda">
+                                    <option selected value="pc">PC</option>
+                                    <option value="psn">PSN</option>
+                                    <option value="xbox">XBOX</option>
+
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" id="buscarMain" class="" onclick="buscarMain()">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
